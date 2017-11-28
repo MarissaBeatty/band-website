@@ -1,0 +1,187 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+.header{
+background: linear-gradient(
+  rgba(191, 63, 191, 0.3),
+  rgba(191, 63, 191, 0.3)
+  );
+height: 600px;
+width: 100%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: -30px;
+}
+
+h1, h2 {
+  z-index: 10;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+}
+
+h1 {
+  height: 25%;
+  font-size: 9em;
+}
+
+h2 {
+  height: 20%;
+  font-size: 5em;
+  color: black;
+  padding: 1em;
+}
+
+.aboutH2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, .name {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+.name {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.musicVideos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: white;
+}
+
+.musicVideosRow1, .musicVideosRow2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.youTubeEmbed {
+  margin: 4%;
+}
+
+.bandCamp {
+  background: linear-gradient(
+    rgba(63, 191, 191, 0.4),
+    rgba(63, 191, 191, 0.4)
+    ),
+    url(imgs/ppbandcamp.jpg);
+    height: 600px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.aboutBand, .bandMember  {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.aboutBand {
+  background-color: white;
+}
+
+.membersRow1, .membersRow2  {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.bandMember {
+  margin: 2%;
+  text-align: center;
+}
+
+.bandMember img {
+  border-radius: 100%;
+}
+
+.social {
+  height: 300px;
+  background-color: rgba(250, 178, 25, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon {
+  color: white;
+  transition: 0.4s ease;
+}
+
+.icon:hover {
+  color: black;
+}
+
+.icon:active {
+  transform: translateY(4px) translateX(3px);
+}
