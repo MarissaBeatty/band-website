@@ -46,22 +46,32 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
 
 input, select { vertical-align: middle; }
 
-.header{
+body {
+  overflow-x: hidden;
+}
+
+.header {
 background: linear-gradient(
   rgba(191, 63, 191, 0.3),
   rgba(191, 63, 191, 0.3)
   );
-height: 600px;
-width: 100%;
+min-height: 100vh;
+min-width: 100vw;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
+background-size: cover;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: -30px;
+padding-right: 0;
+margin-right: 0;
 }
 
+video {
+  min-width: 100vw;
+  min-height: 100vh;
+}
 h1, h2 {
   z-index: 10;
   font-family: 'Dosis', sans-serif;
@@ -104,15 +114,23 @@ p {
 
 .musicVideos {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   background-color: white;
+  height: 100vh;
 }
 
-.musicVideosRow1, .musicVideosRow2 {
+/*.musicVideosRow1, .musicVideosRow2 {
   display: flex;
   flex-direction: row;
+}*/
+
+iframe {
+  max-width: 40vw;
+  height: 40vh;
+  margin: 20px 0;
 }
 
 .youTubeEmbed {
@@ -125,11 +143,12 @@ p {
     rgba(63, 191, 191, 0.4)
     ),
     url(imgs/ppbandcamp.jpg);
-    height: 600px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -146,14 +165,20 @@ p {
 
 .aboutBand {
   background-color: white;
-}
-
-.membersRow1, .membersRow2  {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
+
 }
+
+/*.membersRow1, .membersRow2  {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}*/
 
 .bandMember {
   margin: 2%;
@@ -171,6 +196,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100vw;
 }
 
 .icon {
@@ -184,4 +210,45 @@ p {
 
 .icon:active {
   transform: translateY(4px) translateX(3px);
+}
+
+@media screen and (max-width: 880px) {
+  .bandMember {
+    margin: 4vh 0;
+    text-align: center;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .bandMember img {
+    width: 300px;  
+  }
+  .bandMember .name {
+    font-size: 1.6em;
+  }
+  
+  p {
+    font-size: 1.3em;
+  }
+
+}
+
+@media screen and (max-width: 771px) {
+    h1 {
+    height: 25%;
+    font-size: 4em;
+  }
+  .musicVideos {
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  iframe {
+    max-width: 80vw;
+    height: 50vh;
+    margin: 2vh 0 !important;
+  }
+
+  
 }
