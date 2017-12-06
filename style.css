@@ -118,8 +118,9 @@ p {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  background-color: white;
-  height: 100vh;
+  background-color: #fff;
+  min-height: 100vh;
+  height: auto;
 }
 
 /*.musicVideosRow1, .musicVideosRow2 {
@@ -129,8 +130,8 @@ p {
 
 iframe {
   max-width: 40vw;
-  height: 40vh;
-  margin: 20px 0;
+  height: 300px;
+  margin: 0;
 }
 
 .youTubeEmbed {
@@ -226,7 +227,7 @@ iframe {
   .bandMember .name {
     font-size: 1.6em;
   }
-  
+
   p {
     font-size: 1.3em;
   }
